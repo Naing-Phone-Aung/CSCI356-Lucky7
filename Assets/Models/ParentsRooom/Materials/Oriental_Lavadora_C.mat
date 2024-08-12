@@ -41,11 +41,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _EmissionMap:
+<<<<<<< Updated upstream
         m_Texture: {fileID: 2800000, guid: 112347873a1088e498ee83f55b0cfec1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 2800000, guid: 1177efb704a6a76438ad697457520499, type: 3}
+=======
+        m_Texture: {fileID: 2800000, guid: e3d64b2cc03875e44850c13d6886eb0d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 9e65e3549f9f09049ae4893896a2dfef, type: 3}
+>>>>>>> Stashed changes
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
