@@ -12,8 +12,9 @@ namespace StarterAssets
         public Vector2 look;
         public bool jump;
         public bool sprint;
-        public int attack;  
+        public int attack;
         public bool action;
+        public float esc;  // Changed from bool to float
 
         [Header("Movement Settings")]
         public bool analogMovement;
@@ -48,12 +49,17 @@ namespace StarterAssets
 
         public void OnAttack(InputValue value)
         {
-            AttackInput(value.isPressed ? 1 : 0); 
+            AttackInput(value.isPressed ? 1 : 0);
         }
 
         public void OnAction(InputValue value)
         {
             ActionInput(value.isPressed);
+        }
+
+        public void OnEsc(InputValue value)
+        {
+            EscInput(value.Get<float>());  // Update to handle float input
         }
 #endif
 
@@ -85,6 +91,11 @@ namespace StarterAssets
         public void ActionInput(bool newActionState)
         {
             action = newActionState;
+        }
+
+        public void EscInput(float newEscState)
+        {
+            esc = newEscState;
         }
 
         private void OnApplicationFocus(bool hasFocus)

@@ -12,6 +12,8 @@ namespace StarterAssets
         public Image HealthBar;
         float lerpSpeed;
 
+        public GameObject deathUI;
+
         private Animator _animator;
         private StarterAssetsInputs _input;
         private WeaponManager _weaponManager;
@@ -22,12 +24,18 @@ namespace StarterAssets
         private int _animIDPunch;
         private int _animIDSword;
 
+        private ThirdPersonController _controller;
+
         private void Start()
         {
+            // Hide cursor
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+
             _hasAnimator = TryGetComponent(out _animator);
             _input = GetComponent<StarterAssetsInputs>();
             _weaponManager = GetComponent<WeaponManager>();
-
+            _controller = GetComponent<ThirdPersonController>();
             currentHealth = maxPlayerHealth;
 
             AssignAnimationIDs();
@@ -35,12 +43,20 @@ namespace StarterAssets
 
         private void Update()
         {
+
             if (currentHealth > maxPlayerHealth) currentHealth = maxPlayerHealth;
 
             lerpSpeed = 3f * Time.deltaTime;
 
             HealthBarFiller();
             ColorChanger();
+
+            if (currentHealth <= 0)
+            {
+                _animator.SetBool("Death", false);
+                HandleDeath();
+                return;
+            }
 
             HandleAttacking();
         }
@@ -115,7 +131,7 @@ namespace StarterAssets
                 else
                 {
                     // Animation has finished, deal damage to the enemy
-                    //DealDamage();
+                    DealDamage();
 
                     // Reset attack state
                     if (_hasAnimator)
@@ -127,21 +143,49 @@ namespace StarterAssets
             }
         }
 
-        /* private void DealDamage()
+        private void DealDamage()
         {
             // Get the damage value from the equipped weapon or default punch damage
             int damage = _weaponManager.equippedWeapon != null ? _weaponManager.equippedWeapon.damage : 10; // Default punch damage
 
             // Detect enemies in range (this can be done using raycasts, triggers, or other methods)
             Collider[] hitEnemies = Physics.OverlapSphere(transform.position + transform.forward, 1.5f);
+            Debug.Log("Enemies in range: " + hitEnemies.Length);
             foreach (Collider enemyCollider in hitEnemies)
             {
-                Enemy enemy = enemyCollider.GetComponent<Enemy>();
+                AntEnemy enemy = enemyCollider.GetComponent<AntEnemy>();
                 if (enemy != null)
                 {
                     enemy.TakeDamage(damage);
                 }
             }
-        } */
+        }
+
+        private void HandleDeath()
+        {
+            // Show death UI
+            if (deathUI != null)
+            {
+                DisablePlayerControls();
+                deathUI.SetActive(true);
+            }
+
+            // Show cursor
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        private void DisablePlayerControls()
+        {
+            // Disable player movement and camera movement
+            _controller.enabled = false;
+            _input.enabled = false;
+
+            if (_hasAnimator)
+            {
+                _animator.SetFloat("Speed", 0);
+                _animator.SetFloat("MotionSpeed", 0);
+            }
+        }
     }
 }
