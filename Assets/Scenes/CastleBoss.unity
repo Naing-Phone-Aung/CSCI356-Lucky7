@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1429571412}
-  m_IndirectSpecularColor: {r: 0.19591501, g: 0.23728395, b: 0.31093928, a: 1}
+  m_IndirectSpecularColor: {r: 0.19591802, g: 0.23728359, b: 0.3109178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -12473,7 +12473,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -13524,6 +13524,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1650927300}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1653845195 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8367195431609985420, guid: daeff5ad20681944bab940eb7ee14ecb,
+    type: 3}
+  m_PrefabInstance: {fileID: 952002288}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1663060383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14957,6 +14963,94 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1822589714}
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1001 &1827680331
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5544695788588052817, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 311bd363005dc254fb09c28b534a609c, type: 2}
+    - target: {fileID: 6843176973013096839, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 311bd363005dc254fb09c28b534a609c, type: 2}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.62
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 31.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 90
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7531107637123363149, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: playerPosition
+      value: 
+      objectReference: {fileID: 1653845195}
+    - target: {fileID: 7635169329155360816, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 311bd363005dc254fb09c28b534a609c, type: 2}
+    - target: {fileID: 7704009094686375904, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Name
+      value: GiantModel01_Flat - Golem_Flat
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2616e6a640433b34c82cfe1262e6580d, type: 3}
 --- !u!1 &1864163133
 GameObject:
   m_ObjectHideFlags: 0
@@ -16955,3 +17049,4 @@ SceneRoots:
   - {fileID: 1296872095}
   - {fileID: 11168821}
   - {fileID: 952002288}
+  - {fileID: 1827680331}

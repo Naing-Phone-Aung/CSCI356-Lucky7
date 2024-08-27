@@ -23,25 +23,12 @@ public class GolemEnemy : MonoBehaviour
     public GameObject stonePrefab;
     GameObject stoneClone;
 
-    // Explosion info
-    GameObject explosionClone;
-    public GameObject explosionPrefab;
-    public Transform explosionSpawnPoint;
-
-    // Spiders
-    public GameObject spiderPrefab;
-    GameObject spiderClone;
-    public Transform spiderSpawnPoint;
-    //public SpiderEnemy spiderEnemy;
-
     // Start is called before the first frame update
     void Start()
     {
         golemAnimator = GetComponent<Animator>();
         golemAgent = GetComponent<NavMeshAgent>();
-        //myController = FindObjectOfType<PlayerController>();
-        //spiderEnemy = FindObjectOfType<SpiderEnemy>();
-        // spiderEnemy.enabled = false;
+
     }
 
     // Update is called once per frame

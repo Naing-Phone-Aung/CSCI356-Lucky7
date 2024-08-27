@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17902344, g: 0.2241652, b: 0.30597967, a: 1}
+  m_IndirectSpecularColor: {r: 0.1790232, g: 0.22416481, b: 0.30597898, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -298,6 +298,89 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 81160b54f86ead54aac0583ca566dc21, type: 3}
+--- !u!1001 &794431214
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5544695788588052817, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ac8c77169cabf34ca551257e88c8e7e, type: 2}
+    - target: {fileID: 6843176973013096839, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ac8c77169cabf34ca551257e88c8e7e, type: 2}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 159.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 19.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -17.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635169329155360816, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 3ac8c77169cabf34ca551257e88c8e7e, type: 2}
+    - target: {fileID: 7704009094686375904, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Name
+      value: GiantModel01_Flat - Golem_Flat
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2616e6a640433b34c82cfe1262e6580d, type: 3}
 --- !u!1001 &802629595
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1625,3 +1708,4 @@ SceneRoots:
   - {fileID: 1104181805}
   - {fileID: 386302080}
   - {fileID: 2044874212}
+  - {fileID: 794431214}

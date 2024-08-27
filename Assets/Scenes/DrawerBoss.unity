@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.18028378, g: 0.22571412, b: 0.30692285, a: 1}
+  m_IndirectSpecularColor: {r: 0.18028352, g: 0.22571376, b: 0.30692244, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1274,6 +1274,89 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 724839484}
   m_SourcePrefab: {fileID: 100100000, guid: c20e74ebfc5bf4fe585c8321d66a92bc, type: 3}
+--- !u!1001 &382107533
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5544695788588052817, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10d6e0dabeef53d438eb0b1034fbccf4, type: 2}
+    - target: {fileID: 6843176973013096839, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10d6e0dabeef53d438eb0b1034fbccf4, type: 2}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -45.669865
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.662
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -9.218147
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.969507
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.24506378
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -28.371
+      objectReference: {fileID: 0}
+    - target: {fileID: 7035172204679046490, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7635169329155360816, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 10d6e0dabeef53d438eb0b1034fbccf4, type: 2}
+    - target: {fileID: 7704009094686375904, guid: 2616e6a640433b34c82cfe1262e6580d,
+        type: 3}
+      propertyPath: m_Name
+      value: GiantModel01_Flat - Golem_Flat
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 2616e6a640433b34c82cfe1262e6580d, type: 3}
 --- !u!1001 &431396744
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5228,3 +5311,4 @@ SceneRoots:
   - {fileID: 338097539}
   - {fileID: 2132647641452590420}
   - {fileID: 1486939515}
+  - {fileID: 382107533}
