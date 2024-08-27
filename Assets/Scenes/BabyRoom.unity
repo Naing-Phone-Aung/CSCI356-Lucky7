@@ -3626,10 +3626,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 322269417}
-    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
-        type: 3}
-      insertIndex: -1
       addedObject: {fileID: 322269419}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
         type: 3}
@@ -3638,7 +3634,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 322269422}
+      addedObject: {fileID: 322269417}
   m_SourcePrefab: {fileID: 100100000, guid: b3681b15fa0a0ad4e936d65ce5c2a0fb, type: 3}
 --- !u!1 &322269415 stripped
 GameObject:
@@ -3666,7 +3662,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   golemAnimator: {fileID: 322269420}
   golemAgent: {fileID: 322269419}
-  golemHealth: 50
+  golemHealth: 40
   playerPosition: {fileID: 1874728597}
   distance: 40
   stopDistance: 10
@@ -3675,6 +3671,10 @@ MonoBehaviour:
   stoneSpawnPoint: {fileID: 647975040}
   stonePrefab: {fileID: 9026632582483276396, guid: 8f577d2f542ed1346882f4e036ed215f,
     type: 3}
+  explosionPrefab: {fileID: 0}
+  explosionSpawnPoint: {fileID: 0}
+  spiderPrefab: {fileID: 0}
+  spiderSpawnPoint: {fileID: 0}
 --- !u!136 &322269418
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3726,33 +3726,6 @@ Animator:
     type: 3}
   m_PrefabInstance: {fileID: 322269414}
   m_PrefabAsset: {fileID: 0}
---- !u!54 &322269422
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 322269415}
-  serializedVersion: 4
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_CenterOfMass: {x: 0, y: 0, z: 0}
-  m_InertiaTensor: {x: 1, y: 1, z: 1}
-  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ImplicitCom: 1
-  m_ImplicitTensor: 1
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
 --- !u!1 &342146931 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -8391222552659086748, guid: f3226b4812c1d314eb2d992d7eb8c800,
