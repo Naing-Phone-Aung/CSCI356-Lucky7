@@ -20,6 +20,10 @@ public class MainMenu : MonoBehaviour
     {
         SceneManager.LoadScene("BabyRoom");
     }
+    public void MainMenuL()
+    {
+        SceneManager.LoadScene("MainMenu");
+    }
     public void LivingRoom()
     {
         SceneManager.LoadScene("LivingRoom");
