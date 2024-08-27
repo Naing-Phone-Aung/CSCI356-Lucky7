@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1428026551581525637}
   - component: {fileID: 4709318747066524377}
+  - component: {fileID: 7996993242083694045}
   m_Layer: 0
   m_Name: UIController
   m_TagString: Untagged
@@ -44,5 +45,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a857fe180ccf0b4f80d60afdcd1b9e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  settingsMenu: {fileID: 0}
   pickUpText: {fileID: 0}
   EnterText: {fileID: 0}
+--- !u!114 &7996993242083694045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 863638995752533340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1310a82bb45396643aa62500d9dbe5db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speedSlider: {fileID: 0}
+  speedSliderTxt: {fileID: 0}
